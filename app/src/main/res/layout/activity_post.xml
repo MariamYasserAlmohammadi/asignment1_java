@@ -1,6 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toStartOf="@id/txt1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/baseline_more_horiz_24"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt1" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Unblast"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toTopOf="@id/img1" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableRight="@drawable/baseline_group_work_24"
+        android:text="2 hrs "
+        android:textColor="#AEB0B2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Buckle up, because change is Coming to word Press"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:linksClickable="true"
+        android:text="http://unblast.com/color-schemes"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt3" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="16dp"
+        android:background="#FE8101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt4" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_thumb_up_alt_24"
+        android:gravity="center"
+        android:text=" 12"
+        android:textColor="#FFAEB0B2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableRight="@drawable/baseline_arrow_drop_down_24"
+        android:gravity="center"
+        android:text="1 Share "
+        android:textColor="#FFAEB0B2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#7DAEB0B2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt6" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/outline_thumb_up_alt_24"
+        android:gravity="center"
+        android:text=" Like"
+        android:textColor="#FFAEB0B2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/outline_chat_bubble_outline_24"
+        android:gravity="center"
+        android:text=" Comment"
+        android:textColor="#FFAEB0B2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/txt9"
+        app:layout_constraintStart_toEndOf="@id/txt7"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/outline_share_24"
+        android:gravity="center"
+        android:text=" Share"
+        android:textColor="#FFAEB0B2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
