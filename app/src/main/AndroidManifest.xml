@@ -12,21 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Basics"
         tools:targetApi="31">
-       <activity android:name="basics.HomeActivity"
-           android:exported="true">
-
-       </activity>
-        <activity android:name="basics.LoginActivity"
+        <activity
+            android:name="basics.XOGameActivity"
+            android:exported="false" />
+        <activity
+            android:name="basics.CalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="basics.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="basics.LoginActivity"
+            android:exported="true" />
+        <activity android:name="basics.PostActivity" />
+        <activity
+            android:name="basics.SplashActivity"
             android:exported="true">
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name="basics.PostActivity">
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

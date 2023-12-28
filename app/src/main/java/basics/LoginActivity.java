@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-      Button button= (Button) findViewById(R.id.btn1);
+      Button button= (Button) findViewById(R.id.btn_login);
   button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -26,5 +26,5 @@ public class LoginActivity extends AppCompatActivity {
     public void openPostActivity(){
         Intent intent =new Intent(this ,PostActivity.class);
         startActivity(intent);
-    }
+   }
 }
